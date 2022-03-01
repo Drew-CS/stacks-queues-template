@@ -1,25 +1,21 @@
 # MODIFY ME TO IMPLEMENT YOUR SOLUTION
 # TO PROBLEM 3: GENERATE BINARY NUMBER STRINGS
 #
-# NAME:         FIXME
+# NAME:         Deven Mistry
 # ASSIGNMENT:   Project 2: Stacks & Queues
 
-from Queue import Queue
+from queue import Queue
 
-# generate & return a queue of binary number strings from 1 to N
-# front of queue begins @ '1', returns empty Queue otherwise
-def generate_binary_numbers(N):
-    numbers = Queue([])
+def generate_binary_numbers(n):
+  binary_queue = Queue()
+  #temporary queue to generate binary numbers
+  q = Queue()
+  q.put('1')
+  for i in range(n):
+    front = str(q.get())
+    q.put(front + '0')
+    q.put(front + '1')
+    binary_queue.put(front)
+  return binary_queue
 
-    return numbers
-
-def main():
-    generate_binary_numbers(2).print()
-    generate_binary_numbers(3).print()
-    generate_binary_numbers(6).print()
-
-
-# Don't run main on import
-if __name__ == "__main__":
-    main()
-
+print(generate_binary_numbers(8).queue)
