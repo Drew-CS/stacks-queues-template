@@ -46,8 +46,8 @@ def main():
     print("Is empty?", s.is_empty())
     for i in range(1, 7):
         s.push(i)
-    print("Peek:", s.peek())
-    print("Pop: ", s.pop())
+    print("Peek:    ", s.peek())
+    print("Pop:     ", s.pop())
     s.print()
     print("Is empty?", s.is_empty())
 
