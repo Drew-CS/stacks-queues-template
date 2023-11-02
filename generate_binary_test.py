@@ -5,31 +5,31 @@ from Queue import Queue
 from generate_binary import generate_binary_numbers
 
 def test_binary_0():
-    assert generate_binary_numbers(0) == Queue([])
+    assert generate_binary_numbers(0)  == Queue([])
 
 def test_binary_1():
-    assert generate_binary_numbers(1) == Queue(['1'])
+    assert generate_binary_numbers(1)  == Queue(['1'])
 
 def test_binary_2():
-    assert generate_binary_numbers(2) == Queue(['1', '10'])
+    assert generate_binary_numbers(2)  == Queue(['1', '10'])
 
 def test_binary_3():
-    assert generate_binary_numbers(3) == Queue( ['1', '10', '11'] )
+    assert generate_binary_numbers(3)  == Queue(['1', '10', '11'])
 
 def test_binary_4():
-    assert generate_binary_numbers(4) == Queue( ['1', '10', '11', '100'] )
+    assert generate_binary_numbers(4)  == Queue(['1', '10', '11', '100'])
 
 def test_binary_5():
-    assert generate_binary_numbers(5) == Queue( ['1', '10', '11', '100', '101'] )
+    assert generate_binary_numbers(5)  == Queue(['1', '10', '11', '100', '101'])
 
 def test_binary_6():
-    assert generate_binary_numbers(6) == Queue( ['1', '10', '11', '100', '101', '110'] )
+    assert generate_binary_numbers(6)  == Queue(['1', '10', '11', '100', '101', '110'])
 
 def test_binary_7():
-    assert generate_binary_numbers(7) == Queue( ['1', '10', '11', '100', '101', '110', '111'] )
+    assert generate_binary_numbers(7)  == Queue(['1', '10', '11', '100', '101', '110', '111'])
 
 def test_binary_8():
-    assert generate_binary_numbers(8) == Queue( ['1', '10', '11', '100', '101', '110', '111', '1000'] )
+    assert generate_binary_numbers(8)  == Queue(['1', '10', '11', '100', '101', '110', '111', '1000'])
 
 def test_binary_neg():
     assert generate_binary_numbers(-1) == Queue([])
