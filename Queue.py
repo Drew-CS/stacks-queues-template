@@ -55,8 +55,8 @@ def main():
     print("Is empty?", q.is_empty())
     for i in range(1, 7):
         q.enq(i)
-    print("Peek:", q.peek())
-    print("Deq: ", q.deq())
+    print("Front:   ", q.front())
+    print("Deq:     ", q.deq())
     q.print()
     print("Is empty?", q.is_empty())
 
