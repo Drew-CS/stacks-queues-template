@@ -10,6 +10,7 @@ from Stack import Stack
 # & False otherwise
 def matcher(str):
     s = Stack([])
+    # FIXME
     return True
 
 def main():
