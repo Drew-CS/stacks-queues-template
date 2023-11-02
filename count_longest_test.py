@@ -5,7 +5,7 @@ from Queue import Queue
 from count_longest import count_longest
 
 def test_count_hello():
-    assert count_longest( Queue( [ l for l in "hello" ] ) ) == 2
+    assert count_longest(Queue([l for l in "hello"])) == 2
 
 def test_count_m5():
     assert count_longest(Queue([l for l in "m" * 5])) == 5
