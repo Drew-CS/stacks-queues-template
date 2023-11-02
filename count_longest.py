@@ -10,13 +10,13 @@ from Queue import Queue
 # can destroy the queue & make it empty
 def count_longest(q):
     len = 0
-
+    # FIXME
     return len
 
 def main():
-    print("out 2:", count_longest( Queue( [ l for l in "hello" ] ) ))
+    print("out 2:", count_longest(Queue([l for l in "hello"])))
     print("out 5:", count_longest(Queue([l for l in "m" * 5])))
-    print("out 3:", count_longest(Queue([l for l in "heee"])))
+    print("out 3:", count_longest(Queue([l for l in "heee" ])))
 
 
 # Don't run main on import
