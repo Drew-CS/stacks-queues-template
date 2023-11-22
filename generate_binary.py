@@ -10,7 +10,7 @@ from Queue import Queue
 # front of queue begins @ '1', returns empty Queue otherwise
 def generate_binary_numbers(N):
     numbers = Queue([])
-
+    # FIXME
     return numbers
 
 def main():
