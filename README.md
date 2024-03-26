@@ -21,7 +21,7 @@ You **SHOULD NOT** modify the following files:
 * matching_test.py
 * reverse_test.py
 
-Looking for additional practice problems to prepare for the exam?
+Looking for additional practice problems?
 * practice-problems.py
 
 ### General Hints
@@ -181,6 +181,7 @@ If using PyCharm, you may need to fix your project setup.
 - Open the **Settings/Preferences | Tools | Python Integrated Tools** settings dialog.
 - In the Default test runner field select **pytest**.
 - Click OK to save the settings.
+- **Note on Pycharm:** to run the debugger for this project, you may need to update the name of the Queue.py class to QueueJOC.py. Right-click the Queue.py file, select "refactor", and alter the name of the file. This should alter all the file imports automatically. After the refactor, you should see `from QueueJOC import Queue` as the import line on your projects instead. 
 
 #### VS Code
 If using VS Code, you may need to configure your pytest settings.
